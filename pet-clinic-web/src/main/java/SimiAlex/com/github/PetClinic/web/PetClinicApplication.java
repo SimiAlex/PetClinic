@@ -1,4 +1,4 @@
-package SimiAlex.com.github.PetClinic;
+package SimiAlex.com.github.PetClinic.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
