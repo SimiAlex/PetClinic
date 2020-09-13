@@ -12,7 +12,7 @@
 
 	<groupId>SimiAlex.com.github</groupId>
 	<artifactId>PetClinic</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>Pet Clinic</name>
 	<description>Pet Clinic personal version</description>
 
@@ -53,7 +53,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/SimiAlex/PetClinic.git</developerConnection>
-	  <tag>PetClinic-1.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 </project>
