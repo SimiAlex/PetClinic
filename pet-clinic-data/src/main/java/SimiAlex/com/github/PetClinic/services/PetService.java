@@ -4,9 +4,7 @@ import java.util.Set;
 
 import SimiAlex.com.github.PetClinic.model.Pet;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long>{
    
-    public abstract Pet findById(Long Id);
-    public abstract Pet save(Pet pet);
-    public abstract Set<Pet> findAll();
+   
 }
