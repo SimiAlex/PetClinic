@@ -2,8 +2,8 @@ package SimiAlex.com.github.PetClinic.model;
 
 import java.io.Serializable;
 
-public class BaseEntity implements Serializable {
-
+public class BaseEntity implements Serializable 
+{
     private Long id;
 
     public Long getId() {
@@ -13,6 +13,4 @@ public class BaseEntity implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-
-    
 }

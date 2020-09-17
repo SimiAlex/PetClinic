@@ -1,12 +1,16 @@
 package SimiAlex.com.github.PetClinic.services.map;
 
+import java.util.Collection;
 import java.util.Set;
 
 import SimiAlex.com.github.PetClinic.model.Owner;
-import SimiAlex.com.github.PetClinic.services.CrudService;
+import SimiAlex.com.github.PetClinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
-
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService 
+{
+    // field - map de Owneri
+    
+    // methods
     @Override
     public Set<Owner> findAll() {
         
@@ -33,6 +37,18 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         super.deleteById(id);
     }
 
-  
-    
+    @Override
+    public Owner findByLastName(String lastName) {
+        Collection<Owner> collection = map.values();
+        
+        for (Owner o : collection)
+        {
+            if (lastName.equals(o.getLastName()))
+            {
+                return o;
+            }
+        }
+
+        return null;
+    }
 }

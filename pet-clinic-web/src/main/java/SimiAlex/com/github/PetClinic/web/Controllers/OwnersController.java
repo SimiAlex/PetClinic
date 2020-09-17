@@ -12,5 +12,4 @@ public class OwnersController {
     {
         return "owners/index";
     }
-    
 }

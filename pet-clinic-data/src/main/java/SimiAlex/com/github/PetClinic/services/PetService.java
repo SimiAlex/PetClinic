@@ -4,7 +4,8 @@ import java.util.Set;
 
 import SimiAlex.com.github.PetClinic.model.Pet;
 
-public interface PetService extends CrudService<Pet, Long>{
+public interface PetService extends CrudService<Pet, Long>
+{
    
    
 }

@@ -3,9 +3,9 @@ package SimiAlex.com.github.PetClinic.services.map;
 import java.util.Set;
 
 import SimiAlex.com.github.PetClinic.model.Vet;
-import SimiAlex.com.github.PetClinic.services.CrudService;
+import SimiAlex.com.github.PetClinic.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> 
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService 
 {
     // methods - from interface
     @Override
