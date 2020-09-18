@@ -8,7 +8,7 @@ import SimiAlex.com.github.PetClinic.model.Vet;
 import SimiAlex.com.github.PetClinic.services.VetService;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService 
+public class VetServiceMap extends AbstractMapService<Vet> implements VetService 
 {
     // methods - from interface
     @Override
@@ -26,7 +26,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     @Override
     public Vet save(Vet object) 
     {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

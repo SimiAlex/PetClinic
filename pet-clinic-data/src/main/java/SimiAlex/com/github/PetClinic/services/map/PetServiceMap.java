@@ -8,7 +8,7 @@ import SimiAlex.com.github.PetClinic.model.Pet;
 import SimiAlex.com.github.PetClinic.services.PetService;
 
 @Service
-public class PetServiceMap extends  AbstractMapService<Pet, Long> implements PetService {
+public class PetServiceMap extends  AbstractMapService<Pet> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
@@ -23,7 +23,7 @@ public class PetServiceMap extends  AbstractMapService<Pet, Long> implements Pet
 
     @Override
     public Pet save(Pet object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override
