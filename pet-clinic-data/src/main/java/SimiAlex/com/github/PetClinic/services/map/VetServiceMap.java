@@ -2,9 +2,12 @@ package SimiAlex.com.github.PetClinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import SimiAlex.com.github.PetClinic.model.Vet;
 import SimiAlex.com.github.PetClinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService 
 {
     // methods - from interface

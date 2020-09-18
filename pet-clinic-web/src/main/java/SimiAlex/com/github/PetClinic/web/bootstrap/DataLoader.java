@@ -1,5 +1,6 @@
 package SimiAlex.com.github.PetClinic.web.bootstrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -7,8 +8,7 @@ import SimiAlex.com.github.PetClinic.model.Owner;
 import SimiAlex.com.github.PetClinic.model.Vet;
 import SimiAlex.com.github.PetClinic.services.OwnerService;
 import SimiAlex.com.github.PetClinic.services.VetService;
-import SimiAlex.com.github.PetClinic.services.map.OwnerServiceMap;
-import SimiAlex.com.github.PetClinic.services.map.VetServiceMap;
+
 
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -16,10 +16,11 @@ public class DataLoader implements CommandLineRunner{
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader(){
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService){
 
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+        this.ownerService = ownerService;
+        this.vetService = vetService;
 
     }
     

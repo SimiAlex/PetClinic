@@ -2,9 +2,12 @@ package SimiAlex.com.github.PetClinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import SimiAlex.com.github.PetClinic.model.Pet;
 import SimiAlex.com.github.PetClinic.services.PetService;
 
+@Service
 public class PetServiceMap extends  AbstractMapService<Pet, Long> implements PetService {
 
     @Override

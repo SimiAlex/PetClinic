@@ -3,13 +3,14 @@ package SimiAlex.com.github.PetClinic.services.map;
 import java.util.Collection;
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import SimiAlex.com.github.PetClinic.model.Owner;
 import SimiAlex.com.github.PetClinic.services.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService 
 {
-    // field - map de Owneri
-    
     // methods
     @Override
     public Set<Owner> findAll() {
