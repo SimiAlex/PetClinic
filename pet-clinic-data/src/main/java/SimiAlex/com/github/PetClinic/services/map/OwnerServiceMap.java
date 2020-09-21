@@ -16,7 +16,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner> implements OwnerS
     public Set<Owner> findAll() {
         
         return super.findAll();
-    }
+    } 
 
     @Override
     public Owner findById(Long id) {
