@@ -12,7 +12,7 @@ import SimiAlex.com.github.PetClinic.repositories.PetRepository;
 import SimiAlex.com.github.PetClinic.services.PetService;
 
 @Service
-@Profile("springDataJPA")
+@Profile({"default","springDataJPA"})
 public class PetServiceJPA implements PetService {
 
     private PetRepository petRepository;

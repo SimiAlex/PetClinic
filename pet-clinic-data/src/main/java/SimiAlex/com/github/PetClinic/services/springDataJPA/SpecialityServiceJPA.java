@@ -12,7 +12,7 @@ import SimiAlex.com.github.PetClinic.repositories.SpecialityRepository;
 import SimiAlex.com.github.PetClinic.services.SpecialityService;
 
 @Service
-@Profile("springDataJPA")
+@Profile({"default","springDataJPA"})
 public class SpecialityServiceJPA implements SpecialityService {
 
     private SpecialityRepository specialityRep;

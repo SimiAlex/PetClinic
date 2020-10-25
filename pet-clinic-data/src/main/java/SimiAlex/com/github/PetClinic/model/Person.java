@@ -8,10 +8,10 @@ public class Person extends BaseEntity
 {
     // fields
     @Column(name = "first_name")
-    private String firstName;
+    protected String firstName;
 
     @Column(name = "last_name")
-    private String lastName;
+    protected String lastName;
 
     // methods
     public String getFirstName() {
