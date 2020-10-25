@@ -24,7 +24,6 @@
 	</properties>
 
 	<packaging>pom</packaging>
-
 	<!-- Modules-->
 	<modules>
 		<module>pet-clinic-data</module>
