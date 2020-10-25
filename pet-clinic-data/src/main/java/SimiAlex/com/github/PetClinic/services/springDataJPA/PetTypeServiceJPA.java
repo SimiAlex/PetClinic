@@ -39,7 +39,7 @@ public class PetTypeServiceJPA implements PetTypeService {
 
     @Override
     public PetType save(PetType object) {
-        return petTypeRepository.save(object)
+        return petTypeRepository.save(object);
     }
 
     @Override
