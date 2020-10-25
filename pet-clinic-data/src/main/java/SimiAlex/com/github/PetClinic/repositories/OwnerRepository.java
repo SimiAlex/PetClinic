@@ -6,5 +6,5 @@ import SimiAlex.com.github.PetClinic.model.Owner;
 
 public interface OwnerRepository extends CrudRepository<Owner, Long>
 {
-    
+    public abstract Owner findByLastName(String lastName);
 }
