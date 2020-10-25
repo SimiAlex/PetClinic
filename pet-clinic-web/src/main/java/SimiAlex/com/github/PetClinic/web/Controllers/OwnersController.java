@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import SimiAlex.com.github.PetClinic.services.OwnerService;
 
-@RequestMapping("/owners")
 @Controller
 public class OwnersController {
 
@@ -21,7 +20,7 @@ public class OwnersController {
         this.ownerService = ownerService;
     }
 
-    @RequestMapping({"", "/", "/index", "/index.html"})
+    @RequestMapping({"/owners/find"})
     public String getOwners(Model model)
     {
         model.addAttribute("owners", ownerService.findAll());
