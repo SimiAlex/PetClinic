@@ -7,5 +7,5 @@ The PetClinic has an old and varied history dating right back to the beginning o
 
 
 <p align="center">
-  <img src="github.com/SimiAlex/PetClinic/blob/master/pet-clinic-web/src/main/resources/static/resources/images/Capture.PNG" width="350" title="hover text">
+  <img src="PetClinic/blob/master/pet-clinic-web/src/main/resources/static/resources/images/Capture.PNG" width="350" title="hover text">
 </p>
