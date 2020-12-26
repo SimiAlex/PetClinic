@@ -48,8 +48,8 @@ public class DataLoader implements CommandLineRunner{
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setFirstName("Gigi");
-        owner2.setLastName("Calu");
+        owner2.setFirstName("Ionut");
+        owner2.setLastName("Vasile");
         owner1.setAddress("3 vlahita");
         owner1.setCity("Bucharest");
         owner1.setTelephone("86876y78676");
@@ -58,14 +58,14 @@ public class DataLoader implements CommandLineRunner{
         System.out.println("Owners where loaded...");
 
         Vet vet1 = new Vet();
-        vet1.setFirstName("Oaca");
-        vet1.setLastName("Arizona");
+        vet1.setFirstName("Marcel");
+        vet1.setLastName("Ionescu");
 
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setFirstName("Ozone");
-        vet2.setLastName("Mamamia");
+        vet2.setFirstName("Ciprian");
+        vet2.setLastName("Marinescu");
 
         vetService.save(vet2);
 
